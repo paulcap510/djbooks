@@ -1,0 +1,80 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar, .navbar-nav, .navbar-third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.custom-navbar {
+    background-color: #3e5962;
+    color: white;
+}
+
+.navbar-second, .navbar-third {
+    background-color: #f8f9fa;
+}
+
+.navbar-nav a, .navbar-third a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-nav a:hover, .navbar-third a:hover {
+    color: darkgoldenrod;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-input {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+#hero-section h1 {
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-card {
+    width: calc(25% - 20px); /* Adjust based on your preference */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+}
+
+.book-card h5, .book-card p {
+    padding: 0 15px;
+}
+
+.book-card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.book-card button:hover {
+    background-color: #0056b3;
+}

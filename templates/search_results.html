@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock title %}
+
+{% block content %}
+    <section id="hero-section">
+        <h1>Search Results</h1>
+        <div class="book-container">
+            {% for book in books %}
+                <div class="book-card">
+                    <img src="{{ book.volumeInfo.imageLinks.thumbnail }}" alt="{{ book.volumeInfo.title }}">
+                    <div>
+                        <h5>{{ book.volumeInfo.title }}</h5>
+                        <p>{{ book.volumeInfo.authors|join:", " }}</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            {% empty %}
+                <p>No books found.</p>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}
